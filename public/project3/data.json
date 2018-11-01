@@ -1,0 +1,22 @@
+{
+  "places" : [
+    {
+      "location": [-7.607629, 110.203869],
+      "title"   : "Candi Borobudur",
+      "image"   :"../images/borobudur.jpg",
+      "review"  : "<p> Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini terletak kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.</p>"
+    },
+    {
+      "location": [-7.751936, 110.491500],
+      "title"   : "Candi Prambanan",
+      "image"   :"../images/prambanan.png",
+      "review"  : "<p>Candi Prambanan atau Candi Roro Jonggrang adalah kompleks candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9 masehi. Candi ini dipersembahkan untuk Trimurti, tiga dewa utama Hindu yaitu Brahma sebagai dewa pencipta, Wishnu sebagai dewa pemelihara, dan Siwa sebagai dewa pemusnah.</p>"
+    },
+    {
+      "location": [-7.748398, 110.422499],
+      "title"   : "Candi Gebang",
+      "image"   :"../images/gebang.jpg",
+      "review"  : "<p>Candi Gebang adalah candi Hindu yang berada di dusun Gebang, Kelurahan Wedomartani, Ngemplak, Sleman, DIY. Candi ini diperkirakan dibangun pada sekitar abad ke-8 M pada saat wangsa Sanjaya berkuasa pada zaman Kerajaan Mataram Kuno.</p>"
+    }
+  ]
+}

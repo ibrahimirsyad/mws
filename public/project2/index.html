@@ -1,0 +1,75 @@
+<html>
+	<head>
+	
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="manifest" href="../manifest.json">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="../leaflet/leaflet.css" />
+	<script src="../leaflet/leaflet.js"></script>
+	</head>
+	<style>
+	</style>
+	<body>
+		<div class="container">
+		<div class='menu' style="color: #fff; text-decoration: none;">
+		<a style="color: #fff; " href="../">
+			<img src="../images/favicon256.ico" style="width: 38px; padding: 2px 2px; color: #fff;"> 
+		</a>
+		"Google Mobile Web Spesialist 2018" 
+		</div>
+			<div class='map' id='mapid'> 
+			</div>
+			<div class='image'>
+				<img src="../images/monas.jpg" alt="Visit Ka'bah">
+			</div>
+			<div class='review'>
+				<p> Monumen Nasional atau yang populer disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter yang didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia untuk merebut kemerdekaan dari pemerintahan kolonial Hindia Belanda.</p>
+				<ol>
+				<li>Alamat: Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta</li>
+				<li>Tinggi: 132 m</li>
+				<li>Mulai dibangun: 17 Agustus 1961</li>
+				<li>Jam buka: </li>
+				<li>Tutup ⋅ Buka pukul 07.00</li>
+				<li>Arsitek: Frederich Silaban, R.M. Soedarsono</li>
+					
+				</ol>
+				<p><a href="https://jakarta.go.id/"
+					  target="_blank" rel="noreferrer">https://jakarta.go.id/</a></p>
+			</div>
+			<div class='footer'><p> &copy; 2018. <a style="color: #fff;" href="https://pladiso.com">Ibrahim Irsyad</a> V.00.08</p></div>
+		</div>
+		
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var mymap = L.map('mapid').setView([-6.175249, 106.827296], 15);
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+maxZoom: 18,
+id: 'mapbox.streets',
+accessToken: 'pk.eyJ1IjoiY2Vybm9ieWxsIiwiYSI6Img0amlaZkEifQ.rVWD4jsLbZrocWQJmC_jrA'
+}).addTo(mymap);
+var marker = L.marker([-6.175249, 106.827296]).addTo(mymap);
+
+	var circle = L.circle([-6.175249, 106.827296], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 200
+		}).addTo(mymap);
+
+	marker.bindPopup("<b>MONUMEN NASIONAL</b>").openPopup();
+
+	var popup = L.popup();
+	function onMapClick(e) {
+	popup
+	.setLatLng(e.latlng)
+	.setContent("Lokasi yang dipilih: " + e.latlng.toString())
+	.openOn(mymap);
+	}
+	mymap.on('click', onMapClick);
+</script>
+<script type="application/javascript" src="../app.js"></script>
